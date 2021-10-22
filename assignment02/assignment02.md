@@ -16,4 +16,13 @@
     b. Both the 'Z' and 'C' flags are set to 1 because our result (counter) is equal to 0 and we had a carry going from 4294967295 to 0. 0xFFFFFFFF is largest possible integer we can represent, doesn't matter if it is signed or unsigned -- if signed then that value is equal to -1 and if unsigned it's equal to 4294967295. Incrementing that value will always result in the result being 0.
 
 ### 5. Move the “counter’ variable outside of main (at the top of the file).
-    a. 
+    a. The 'counter' variable now has global scope
+    b. The 'counter' variable is not visible in the 'Locals' view
+    c. The 'counter' variable is visible in the 'Watch' view
+    d. The address of the 'counter' variable is 0x20000000
+
+### 6. Change the source code to the following, then run the program in the simulator.
+    a. The value of 'counter' is 4
+    b. 'Counter' is 4 because we created a pointer (p_int) that pointed to the address of 'counter'. Then we incremented the value at p_int 3 times and incremented 'counter' directly once to get to 4.
+
+### 7. 
