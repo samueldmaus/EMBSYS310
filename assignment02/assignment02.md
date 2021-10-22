@@ -25,4 +25,7 @@
     a. The value of 'counter' is 4
     b. 'Counter' is 4 because we created a pointer (p_int) that pointed to the address of 'counter'. Then we incremented the value at p_int 3 times and incremented 'counter' directly once to get to 4.
 
-### 7. 
+### 7. Change the setting of IAR to run the same program on the evaluation board.
+    a. 0x20000000
+    b. RAM
+    c. 4
