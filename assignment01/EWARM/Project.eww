@@ -7,6 +7,9 @@
         <path>$WS_DIR$\..\..\assignment03\assignment03.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\..\..\assignment04\assignment04.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Hello_World.ewp</path>
     </project>
     <batchBuild />
