@@ -12,4 +12,4 @@ int main()
   // result should be 1 for little endian or 0 for big endian
   assert(result == 1);
   return 0;
-}
+}Sw
