@@ -37,7 +37,7 @@ void main(void)
     RCC_AHB2ENR |= 0x1;
     
     // <TODO> Replace above statement with function call below
-    // enable_rcc(0);
+    //enable_rcc(0);
   
     // GPIO port mode register (GPIOx_MODER) (x = A..E and H)
     // GPIOA Base Address: 0x48000000

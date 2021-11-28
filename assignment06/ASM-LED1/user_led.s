@@ -56,5 +56,16 @@ GPIOA_BIT_5 EQU 0x20
 
 control_user_led1
     // <TODO> Implement function in assembly
-
+    LDR R2, =GPIOA_BASE // load gpioa base into r2
+    LDR R3,[R2, #GPIOA_ODR] // load base+odr into r3
+    CMP R0, #1
+    ITE EQ
+    ORREQ R3, R3, #GPIOA_BIT_5 // turn on led one
+    BICNE R3, R3, #GPIOA_BIT_5 // turn off led one
+    STR R3, [R2, #GPIOA_ODR] // load odr+r2 into r3
+    PUSH {LR} // push lr onto stack
+    MOV R0, R1
+    BL delay // call delay func
+    POP {LR} // restore link register
+    BX LR // branch back to lr
     END
