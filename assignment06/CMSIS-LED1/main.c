@@ -13,8 +13,8 @@ void main(void)
     RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
    
     
-    GPIOB->MODER &= ~GPIO_MODER_MODE5_1;
-    GPIOB->MODER |= GPIO_MODER_MODE5_0;
+    GPIOA->MODER &= ~GPIO_MODER_MODE5_1;
+    GPIOA->MODER |= GPIO_MODER_MODE5_0;
     
     
     while(1)
