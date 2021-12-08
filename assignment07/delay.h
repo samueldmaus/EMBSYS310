@@ -1,6 +1,8 @@
 #ifndef __DELAY_H__
 #define __DELAY_H__
 
-void delay(unsigned int iteration);
+#include <stdint.h>
+
+void delay(uint32_t iteration);
 
 #endif
